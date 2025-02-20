@@ -1,0 +1,54 @@
+body > header{
+    width: 100vw;
+    background-color: #A63F03;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+
+}
+
+body > header > a{
+    width: 18rem;
+}
+
+body > header > nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding-right: 5%;
+}
+
+body > header > nav a{
+    color: var(--text-white);
+    font-weight: 400;
+    font-size: 17px;;
+}
+
+body > header > form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem; 
+    gap: 1rem
+}
+
+body > header > form input[type="checkbox"]{
+    display: none;
+}
+
+body > header > form label{
+    width: 1.2rem;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > form label svg{
+    fill: var(--text-white);
+    height: 100%;
+    object-fit: contain;
+}
