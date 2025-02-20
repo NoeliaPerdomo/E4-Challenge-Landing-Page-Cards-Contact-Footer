@@ -54,19 +54,23 @@
     aspect-ratio: 1/1;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
     cursor: pointer;
-    transform: scale(0.98);
-    transition: all 200ms ease-in-out;
+    
 }
 
 #cards > ul > li > picture img{
     width: 300px;
     height: 300px;
     object-fit: contain;
+    transform: scale(0.98);
+    transition: transform 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
-#cards > ul >li > picture:hover{
-    transform: scale(1)
+#cards > ul >li > picture img:hover{
+    transform: scale(1);
 }
 
 #cards > ul > li > ul{
